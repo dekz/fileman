@@ -52,7 +52,7 @@ describe Fileman::File do
       permissions 0755
       user 'jacob'
     end
-p t
+
     expect(File.exists? 'abcd').to be(true)
   end
 end

@@ -1,5 +1,12 @@
 $:.unshift File.expand_path(File.join(File.dirname(__FILE__), '../lib'))
 
+def ci?; ENV['CI'] end
+
+if ci?
+  require 'coveralls'
+  Coveralls.wear!
+end
+
 require 'fakefs/safe'
 require 'fileman'
 

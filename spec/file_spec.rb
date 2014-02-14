@@ -18,7 +18,7 @@ describe Fileman::File do
 
   it 'can specify the user name to chown to' do
     file 'abcd' do |f|
-      user 'jacob'
+      user 'test_user'
     end
     expect(File.exists? 'abcd').to be(true)
   end
@@ -27,11 +27,11 @@ describe Fileman::File do
     expect(FileUtils).to receive(:chown).twice.and_call_original
     file 'abcd' do |f|
       contents '1234'
-      user 'jacob'
+      user 'test_user'
     end
     file 'abcd' do |f|
       contents << '56789'
-      user 'jacob'
+      user 'test_user'
     end
     expect(File.exists? 'abcd').to be(true)
     expect(File.read 'abcd').to match('123456789')
@@ -41,7 +41,7 @@ describe Fileman::File do
     file 'abcd' do |f|
       contents 'wukka wukka'
       permissions 0755
-      user 'jacob'
+      user 'test_user'
     end
     expect(File.exists? 'abcd').to be(true)
   end
@@ -50,7 +50,7 @@ describe Fileman::File do
     t = tar 'abcd' do |f|
       contents 'wukka wukka'
       permissions 0755
-      user 'jacob'
+      user 'test_user'
     end
 
     expect(File.exists? 'abcd').to be(true)

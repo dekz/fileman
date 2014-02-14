@@ -1,5 +1,5 @@
 # Fileman
-[![Build Status](https://travis-ci.org/dekz/fileman.png?branch=master)](https://travis-ci.org/dekz/fileman)
+[![Build Status](https://travis-ci.org/dekz/fileman.png?branch=master)](https://travis-ci.org/dekz/fileman) [![Coverage Status](https://coveralls.io/repos/dekz/fileman/badge.png?branch=master)](https://coveralls.io/r/dekz/fileman?branch=master)
 
 a DSL for file tasks and file manipulations
 

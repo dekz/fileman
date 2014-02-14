@@ -33,6 +33,13 @@ Or install it yourself as:
   end
 # File is owned by ubuntu and contains 'test file here'
 
+  chown '/tmp/test', user: 'root'
+# File is owned by root
+
+  file '/home/root/.ssh/id_rsa' do
+    permissions 400
+  end
+
 ```
 
 ## Contributing

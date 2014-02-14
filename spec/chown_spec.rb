@@ -1,8 +1,5 @@
 require_relative './spec_helper'
 
-require 'fakefs/safe'
-require 'fileman'
-
 describe Fileman::Chown do
   before :each do
     FakeFS.activate!

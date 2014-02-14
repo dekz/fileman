@@ -1,7 +1,4 @@
-require_relative './spec_helper'
-
-require 'fakefs/safe'
-require 'fileman'
+require File.expand_path(File.join(File.dirname(__FILE__), './spec_helper'))
 
 describe Fileman::Chmod do
   before :each do

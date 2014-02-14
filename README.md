@@ -1,4 +1,5 @@
 # Fileman
+[![Build Status](https://travis-ci.org/dekz/fileman.png?branch=master)](https://travis-ci.org/dekz/fileman)
 
 a DSL for file tasks and file manipulations
 
